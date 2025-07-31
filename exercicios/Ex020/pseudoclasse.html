@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .open{
+            display:inline-block;
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+             }
+
+             div:hover {
+                background-color: blueviolet;
+             }
+
+             div.open:hover {
+                background-color: brown;
+
+
+
+             }
+
+             .closed {
+            display:inline-flex;
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            
+             }
+
+             .open > div {
+                display: none;
+             }
+
+             .open:hover > div {
+                display: block;
+             }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Criando Algo</h1>
+
+    <div class="open">01</div>
+    <div class="open">02</div>
+    <div class="open">03
+         <div class="closed"></div>
+    </div>
+
+   
+    
+</body>
+</html>
