@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            background-color: lightgray;
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        th {
+            border: 1px solid black;
+            background-color: rgba(0, 0, 0, 0.753);
+            color: white;
+            padding: 10px;
+        }
+
+        td{
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        /* Se eu quiser selecionar uma coluna inteira eu posso usar a tag (colgroup). colocar a quantinade de colunas, nomear dentro de outra tag (Col) e assim posso usar ela e por exemplo colocar um background na coluna inteira*/
+
+        /* para podermos deixar mais responsivo, podemos usar uma tag chamada overflow, para que possamos dazer com que a nossa tabela, ao invez de mexer a tela inteira por conta do tamanho, usando essa tag, ela vai começar a rolar somente ela, e assim vai ficar mais fácil */
+
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th scope="col">grupo</th>
+            <th scope="col">Nome</th>
+            <th colspan="3" scope="colgroup">Filmes</th>
+        </tr>
+
+        <tr>
+            <th rowspan="3" scope="rowgroup">Mulheres</th>
+            <td>Ana Maria Santos</td>
+            <td>Allien</td>
+            <td>Rambo</td>
+            <td>Vingadores</td>
+        </tr>
+
+        <tr>
+            <td>Cláudia Melo</td>
+            <td>Oblivion</td>
+            <td>Matrix</td>
+            <td>Batman</td>
+        </tr>
+        
+        <tr>
+            <td>Beatriz Souza</td>
+            <td>Hulk</td>
+            <td>Inception</td>
+            <td>Big Hero</td>
+        </tr>
+
+        <tr>
+            <th rowspan="3" scope="rowgroup">Homens</th>
+            <td>Bruno Mendonça</td>
+            <td>Intocáveis</td>
+            <td>Amnésia</td>
+            <td>Gladiador</td>
+        </tr>
+
+        <tr>
+            <td>Daniel Lourenço</td>
+            <td>Wall-e</td>
+            <td>Oldboy</td>
+            <td>Dangal</td>
+        </tr>
+
+        <tr>
+            <td>Fabiano Mota</td>
+            <td>Star Wars 5</td>
+            <td>Taxi Driver</td>
+            <td>Toy Story</td>
+        </tr>
+
+    </table>
+</body>
+</html>
