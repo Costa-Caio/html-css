@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <!-- Existem 2 metodos para envio de form 1 é o get, que é o padrão, ou seja ele fica parencendo no url, e o 2 é o post ele não aparece na url, mas não são totlamente seguros-->
+
+    <h1>Meu primeiro form</h1>
+
+    <form action="" method="post" autocomplete="off"> <!--  O action é usado para saber para onde esses dados do form vai ser enviado-->
+
+
+        <p ><label for="name">Nome:</label>
+            <input type="text" name="name" id="name">
+        </p>
+        <p><label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+
+    </form>
+    
+</body>
+</html>
