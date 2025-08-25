@@ -1,8 +1,8 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
 
     body {
-        background-color: black;
+        background-image: url('../imagens/back-tablet.jpg');
     } 
 
 img#phone {display:none;}
